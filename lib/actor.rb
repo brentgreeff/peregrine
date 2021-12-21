@@ -12,14 +12,16 @@ class Actor
   end
 
   def self.films(actor)
-    client = SPARQL::Client.new("http://dbpedia.org/sparql")
+    puts "DBpedia request for #{actor}"
+    # client = SPARQL::Client.new("http://dbpedia.org/sparql")
 
-    results = {}
-    binding.pry
-    client.query(query).first.each_binding do |name, value|
-      results[name] = value
-    end
-    results
+    # results = {}
+    # binding.pry
+    # client.query(query).first.each_binding do |name, value|
+    #   results[name] = value
+    # end
+    # results
+    'VALUE'
   end
 
   private
