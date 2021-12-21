@@ -16,6 +16,10 @@ guard :rspec, cmd: "bundle exec rspec" do
     "spec/requests/peregrine_spec.rb"
   end
 
+  watch(%r{^lib/(.+)\.rb$}) do
+    "spec/requests/peregrine_spec.rb"
+  end
+
   # RSpec files
   rspec = dsl.rspec
   watch(rspec.spec_helper) { rspec.spec_dir }

@@ -4,6 +4,8 @@ ruby "2.7.2"
 gem "roda"
 gem "puma"
 
+gem "sparql-client"
+
 group :development do
   gem "rerun"
   gem 'rubocop', require: false
